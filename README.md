@@ -1,2 +1,2 @@
 # web_scraping
-Projects related with web scrapping
+Projects related with web scraping
