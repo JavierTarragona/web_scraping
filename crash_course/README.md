@@ -15,7 +15,9 @@ Learnings:
 * build a spider (basic template)
 
 ### Project-2: worldometers (Part 2)
-
+Learnings:
+* follow links with scrapy (managing partial and absolute urls)
+* Export data in different formats
 
 # Scrapy
 
@@ -59,6 +61,7 @@ Usage:
 scrapy <command> [options] [args]
 
 Examples:
-* Set up a project: scrapy startproject worldometers
-* Set up a spider: scrapy genspider countries www.worldometers.info/world-population/population-by-country
-* Run a spider: srcapy crawl countries 
+* Set up a project: `scrapy startproject worldometers`
+* Set up a spider: `scrapy genspider countries www.worldometers.info/world-population/population-by-country`
+* Run a spider: `srcapy crawl countries` 
+* Run a spyder and export data to .json: `srcapy crawl countries -o population_dataset.json`
