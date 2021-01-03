@@ -28,7 +28,11 @@ Learnings:
 * Adjust default export encoding (add to settings.py utf-8 encoding)
 
 ### Project-4: cigabuy (Part 2) 
-Learnings:
+Learnings: 
+* How to change scrapy default user agent to not being blocked:
+> * Override default user-agent in settings.py
+> * Override default request headers (user agent) in settings.py
+> * Override default request headers (user agent) in the spyder python code (best option)
 
 
 # Scrapy
