@@ -29,7 +29,7 @@ Learnings:
 
 ### Project-4: cigabuy (Part 2) 
 Learnings: 
-* How to change scrapy default user agent to not being blocked:
+* How to change scrapy default user agent to not being blocked (adding google chrome default):
 > * Override default user-agent in settings.py
 > * Override default request headers (user agent) in settings.py
 > * Override default request headers (user agent) in the spyder python code (best option)
