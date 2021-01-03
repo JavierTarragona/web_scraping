@@ -11,13 +11,29 @@ Welcome to the web scraping crash course README!
 ### Project-1: worldometers (Part 1)
 Learnings:
 * scrapy commands (startproject, genspider, crawl)
+* Basic scrapy shell commands
 * Xpath expressions
-* build a spider (basic template)
+* Build a spider (basic template)
 
 ### Project-2: worldometers (Part 2)
 Learnings:
-* follow links with scrapy (managing partial and absolute urls)
+* Build a spider (basic template) capable to follow links
+* Manage partial and absolute urls
 * Export data in different formats
+
+### Project-3: cigabuy (Part 1) 
+Learnings:
+* Build a spider (basic template) capable to manage pagination
+* Set up obey robots.txt rules to false in settings.py
+* Adjust default export encoding (add to settings.py utf-8 encoding)
+
+### Project-4: cigabuy (Part 2) 
+Learnings: 
+* How to change scrapy default user agent to not being blocked (adding google chrome default):
+> * Override default user-agent in settings.py
+> * Override default request headers (user agent) in settings.py
+> * Override default request headers (user agent) in the spyder python code (best option)
+
 
 # Scrapy
 
@@ -38,7 +54,6 @@ Scrapy has 5 main components:
 * Engine: Coordinates all the other components.
 
 ## Scrapy Commands:
-
 scrapy: Allow to see all possible commands.
 
 Available commands:
@@ -63,5 +78,5 @@ scrapy <command> [options] [args]
 Examples:
 * Set up a project: `scrapy startproject worldometers`
 * Set up a spider: `scrapy genspider countries www.worldometers.info/world-population/population-by-country`
-* Run a spider: `srcapy crawl countries` 
-* Run a spyder and export data to .json: `srcapy crawl countries -o population_dataset.json`
+* Run a spider: `scrapy crawl countries` 
+* Run a spyder and export data to .json: `scrapy crawl countries -o population_dataset.json`
