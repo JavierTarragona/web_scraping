@@ -41,6 +41,17 @@ Learnings:
 * How to change default user-agent in CrawlSpider template.
 * Xpath expression using normalize-space function (remove white spaces).
 
+### Project-6: livecoin (splash)
+Learnings: 
+* Build a spider (basic template) capable to crawl pages that use java using splash.
+* Configure settings.py to use scrapy-splash (https://github.com/scrapy-plugins/scrapy-splash).
+
+### Project-7: livecoin (selenium)
+Learnings: 
+* Build a spider (basic template) capable to crawl pages that use java using selenium.
+* Install selenium (https://selenium-python.readthedocs.io/).
+*
+
 # Scrapy
 
 ## Scrapy documentation: 
