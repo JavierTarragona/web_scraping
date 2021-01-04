@@ -34,6 +34,12 @@ Learnings:
 > * Override default request headers (user agent) in settings.py
 > * Override default request headers (user agent) in the spyder python code (best option)
 
+### Project-5: imdb
+Learnings:
+* Build a spider (CrawlSpider template) capable to follow links using rules property.
+* Build a spider (CrawlSpider template) capable to manage pagination using rules property.
+* How to change default user-agent in CrawlSpider template.
+* Xpath expression using normalize-space function (remove white spaces).
 
 # Scrapy
 
@@ -78,5 +84,6 @@ scrapy <command> [options] [args]
 Examples:
 * Set up a project: `scrapy startproject worldometers`
 * Set up a spider: `scrapy genspider countries www.worldometers.info/world-population/population-by-country`
+* Set up a spider (specific template): `scrapy genspider -t crawl best_movies imdb.com`
 * Run a spider: `scrapy crawl countries` 
 * Run a spyder and export data to .json: `scrapy crawl countries -o population_dataset.json`
