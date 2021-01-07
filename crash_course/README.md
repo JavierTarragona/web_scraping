@@ -48,9 +48,19 @@ Learnings:
 
 ### Project-7: livecoin (selenium)
 Learnings: 
-* Build a spider (basic template) capable to crawl pages that use java using selenium.
+* Build a spider (basic template) capable to crawl pages that use java using selenium (more intuitive).
 * Install selenium (https://selenium-python.readthedocs.io/).
-*
+
+### Project-8: cigabuy (Part 3) 
+Learnings:
+* Techniques to avoid getting blacklisted by websites while scraping them:
+> * Modify concurrent_request variable in settings.py.
+> * Modify download_delay variable in settings.py adding a delay between each request sent.
+> * Modify autothrottle_start_delay in settings.py.
+> * Modify user agent.
+* Build a random rotator user agent:
+> * Build customed middleware (UserAgentRotatorMiddleware) in middlewares.py
+> * Adjust settings to use (UserAgentRotatorMiddleware)
 
 # Scrapy
 
@@ -67,7 +77,7 @@ Scrapy has 5 main components:
 > * SitemapSpider
 * Middleware: This component manages all the process related with the request and response.
 * Scheduler: This Component is responsible to preserve the order of the tasks.
-* Pipeline: In this component are defined data pipeline task as: cleaning, remove and storing
+* Pipeline: In this component are defined data pipeline task as: cleaning, remove and storing in db.
 * Engine: Coordinates all the other components.
 
 ## Scrapy Commands:
